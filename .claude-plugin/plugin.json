@@ -1,7 +1,7 @@
 {
   "name": "ai-automation-skills",
-  "version": "0.5.0",
-  "description": "30 production-tested Claude skills: Telegram/Slack/Discord alerts and polling, Gemini cost/cache/budget control + structured output + vision extraction, walk-forward validation, backtest comparison, config-drift audit, Algora + GitHub-label scouting, PR body formatting, scrape-AI-alert pipelines, cron dispatch, IMAP digests, short-form video scripts, webhook intake, SQLite run-state, proxy rotation, Playwright session reuse and snapshots, hardened HTTP retry sessions, CSV/Markdown/PDF extraction, .env config loading, S3 artifact storage, Notion row upserts, and token-bucket rate budgeting.",
+  "version": "0.6.0",
+  "description": "35 production-tested Claude skills: Telegram/Slack/Discord alerts and polling, Gemini cost/cache/budget control + structured output + vision extraction, walk-forward validation, backtest comparison, config-drift audit, Algora + GitHub-label scouting, PR body formatting, scrape-AI-alert pipelines, cron dispatch, IMAP digests, RSS/Atom reading, HTML-to-text, JSON-schema validation, JSONL run-state, URL canonicalization, short-form video scripts, webhook intake, SQLite run-state, proxy rotation, Playwright session reuse and snapshots, hardened HTTP retry sessions, CSV/Markdown/PDF extraction, .env config loading, S3 artifact storage, Notion row upserts, and token-bucket rate budgeting.",
   "author": { "name": "baronguyen001", "url": "https://github.com/baronguyen001" },
   "homepage": "https://github.com/baronguyen001/ai-automation-skills",
   "repository": "https://github.com/baronguyen001/ai-automation-skills",

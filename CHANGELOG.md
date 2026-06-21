@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.6.0 — 2026-06-21
+
+- Grew the catalog from 30 to 35 skills. Added 5 new stdlib-only skills:
+  - `rss-feed-reader` — parse RSS 2.0 and Atom feeds into one normalized item shape (no feedparser).
+  - `json-schema-validator` — validate a payload against a JSON Schema subset with readable errors (no jsonschema dependency).
+  - `html-to-text` — strip HTML to clean plain text, dropping script/style and collapsing whitespace (no BeautifulSoup/lxml).
+  - `jsonl-store` — durable append-only JSON Lines state with streaming reads and key-based dedup across runs.
+  - `url-canonicalizer` — normalize URLs (strip tracking params + fragment, sort query) so the same page dedupes to one key.
+- Bumped plugin/marketplace to v0.6.0 and updated the skill table and validator's expected set.
+
 ## v0.5.0 — 2026-06-11
 
 - Grew the catalog from 25 to 30 skills. Added 5 new skills:

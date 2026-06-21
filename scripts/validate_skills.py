@@ -41,6 +41,11 @@ EXPECTED_SKILLS = {
     "discord-bot-poller",
     "notion-row-writer",
     "playwright-pdf-snapshot",
+    "rss-feed-reader",
+    "json-schema-validator",
+    "html-to-text",
+    "jsonl-store",
+    "url-canonicalizer",
 }
 ALLOWED_FRONTMATTER_KEYS = {
     "name",
@@ -140,8 +145,8 @@ def validate_manifests() -> None:
         fail("marketplace.json must have non-empty plugins")
     if not plugin.get("name"):
         fail("plugin.json must have name")
-    if plugin.get("version") != "0.5.0":
-        fail("plugin.json version must be 0.5.0")
+    if plugin.get("version") != "0.6.0":
+        fail("plugin.json version must be 0.6.0")
 
 
 def validate_skills() -> None:

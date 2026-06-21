@@ -1,6 +1,6 @@
 # ai-automation-skills
 
-30 production-tested Claude skills for automation, Gemini cost control, OSS bounty hunting, artifact capture, and ML strategy validation. Distilled from 8 months of indie-hacker work.
+35 production-tested Claude skills for automation, Gemini cost control, OSS bounty hunting, artifact capture, and ML strategy validation. Distilled from 8 months of indie-hacker work.
 
 > 🧰 **Coming soon:** *Trawlkit* — a paid starter kit that wires these skills into runnable scrape → AI → alert bots in one install. Every skill below ends with a `→ Build the full runnable bot with Trawlkit` pointer. Follow [@barobaonguyen](https://x.com/barobaonguyen) for the launch.
 
@@ -9,7 +9,7 @@
 /plugin install ai-automation-skills@baronguyen001
 ```
 
-![Skills](https://img.shields.io/badge/skills-30-blue) ![License](https://img.shields.io/badge/license-MIT-green) ![Last commit](https://img.shields.io/github/last-commit/baronguyen001/ai-automation-skills) ![Stars](https://img.shields.io/github/stars/baronguyen001/ai-automation-skills)
+![Skills](https://img.shields.io/badge/skills-35-blue) ![License](https://img.shields.io/badge/license-MIT-green) ![Last commit](https://img.shields.io/github/last-commit/baronguyen001/ai-automation-skills) ![Stars](https://img.shields.io/github/stars/baronguyen001/ai-automation-skills)
 
 Demo captures are intentionally not fabricated. The needed screenshots are tracked in [screenshots/README.md](screenshots/README.md).
 
@@ -91,8 +91,13 @@ Installed skills appear under the `ai-automation-skills:<skill>` namespace.
 | Skill | What it does | Trigger |
 |---|---|---|
 | `shortform-script` | Drafts short-form or long-form video scripts from a topic plus a creator persona file, using fact slots to avoid invented personal claims. | "write a video script", "tiktok script" |
+| `rss-feed-reader` | Parses RSS 2.0 and Atom feeds into one normalized item shape, stdlib only, no feedparser. | "read an RSS feed", "poll a blog feed" |
+| `json-schema-validator` | Validates a payload against a JSON Schema subset with readable errors, no jsonschema dependency. | "validate this payload", "reject malformed records" |
+| `html-to-text` | Strips HTML to clean text (drops script/style, collapses whitespace) with the standard library only. | "get text out of HTML", "clean scraped HTML" |
+| `jsonl-store` | Appends records to JSON Lines with streaming reads and key dedup for durable between-run state. | "log to JSONL", "dedup by id across runs" |
+| `url-canonicalizer` | Normalizes URLs (strip tracking params/fragment, sort query) so the same page dedupes to one key. | "dedup links", "normalize scraped URLs" |
 
-## Why These 30
+## Why These 35
 
 Every skill maps to a real pattern used repeatedly across automation, Gemini, validation, and open-source contribution workflows. The point is not a huge catalog; it is a compact set of skills with concrete examples, reusable assets, and enough install structure to work as a Claude Code plugin marketplace. Each one teaches the reusable technique; *Trawlkit* (coming soon) wires them into a full runnable bot.
 

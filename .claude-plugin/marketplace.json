@@ -6,13 +6,13 @@
   },
   "metadata": {
     "description": "Production-tested Claude skills for automation, Gemini cost control, OSS bounty hunting, and ML strategy validation.",
-    "version": "0.5.0"
+    "version": "0.6.0"
   },
   "plugins": [
     {
       "name": "ai-automation-skills",
       "source": "./",
-      "description": "30 battle-tested skills distilled from real indie-hacker automation work."
+      "description": "35 battle-tested skills distilled from real indie-hacker automation work."
     }
   ]
 }
